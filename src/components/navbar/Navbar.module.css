@@ -1,0 +1,95 @@
+.container {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+/* LOGO 
+display: flex :- Turns the .logoContainer into a flex container. This allows child elements (like the image and text) to be aligned and spaced easily.
+align-items: center	:- Vertically centers the logo text and image inside the navbar’s height.
+*/
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+  display: flex; /* Aligns image + text side-by-side (important when both are inside the link).*/
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.imageWrapper {
+  position: relative;/* Required for next/image with fill — it lets the child <Image> absolutely position itself inside. */
+  width: 40px;
+  height: 40px;
+}
+
+.img {
+  object-fit: contain;/* Ensures the image scales down to fit inside the box without cropping or distortion.*/
+}
+
+/* LINKS */
+.links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  padding: 10px;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.active {
+  color: #3b82f6; /* blue */
+  border-bottom: 2px solid #3b82f6;
+  font-weight: bold;
+}
+
+
+.link:hover {
+  color: #0070f3;
+}
+
+/* MENU ICON */
+.menuIcon {
+  display: none;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+@media (max-width: 768px) {
+  .links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem 0;
+    display: none;
+  }
+
+  .showMenu {
+    display: flex;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+}
