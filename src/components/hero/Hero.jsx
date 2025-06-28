@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'; // ✅ This is now allowed in latest Framer Motion
 
-import Button from "@/components/button/button";
+import Button from "@/components/button/Button";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
