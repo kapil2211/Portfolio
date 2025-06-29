@@ -20,6 +20,15 @@ const carouselItems = [
     githubcode: "https://github.com/kapcode22/CalAi.git",
     desc: "Developed a payment-enabled React application to understand and implement Stripe integration. I also explored key web concepts like localStorage, sessionStorage, and integrated Firebase Authentication for secure user login and session management.",
   },
+
+   {
+    title: "DAG pipeline",
+    img: "Payment_App.png",
+    livelink: "https://dag-pipeline.vercel.app/",
+    githubcode: "https://github.com/kapil2211/DAG_pipeline.git",
+    desc: "An interactive web-based Directed Acyclic Graph (DAG) builder built using React Flow and Dagre(Auto layout), allowing users to create, connect, and validate a flow of operations visually.",
+  },
+  
   {
     title: "Artistly.com ",
     img: "Artistly.png",
