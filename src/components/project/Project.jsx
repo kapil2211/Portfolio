@@ -23,7 +23,7 @@ const carouselItems = [
 
    {
     title: "DAG pipeline",
-    img: "Payment_App.png",
+    img: "public/DAG-pipeline.png",
     livelink: "https://dag-pipeline.vercel.app/",
     githubcode: "https://github.com/kapil2211/DAG_pipeline.git",
     desc: "An interactive web-based Directed Acyclic Graph (DAG) builder built using React Flow and Dagre(Auto layout), allowing users to create, connect, and validate a flow of operations visually.",
